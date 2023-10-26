@@ -1,14 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const fechaObjetivo = new Date("2023-10-26T00:00:00"); // Cambia esto a la fecha y hora que desees.
+    const targetDate = new Date("2023-10-26T00:00:00"); // Set target time.
 
-    function mostrarContenido() {
-        const ahora = new Date();
+    function showContent() {
+        const currentDate = new Date();
 
-        if (ahora >= fechaObjetivo) {
-            document.getElementById("contenido-oculto").style.display = "block";
+        if (currentDate >= targetDate) {
             const pre_content = document.getElementById("pre-content");
-            pre_content.classList.remove("hidden");
-            pre_content.classList.add("visible");
+            pre_content.classList.remove("visible");
+            pre_content.classList.add("hidden");
             
             const post_content = document.getElementById("post-content");
             post_content.classList.remove("hidden");
@@ -17,5 +16,5 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    setInterval(mostrarContenido, 10000); // Comprueba cada segundo.
+    setInterval(showContent, 1000); // Check every sec.
 });

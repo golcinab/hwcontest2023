@@ -14,6 +14,7 @@ p {
     font-size: 1.2em;
     margin: 20px 0;
 }
+
 .visible {
     display: block;
     max-width: 600px;
