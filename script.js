@@ -6,6 +6,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (ahora >= fechaObjetivo) {
             document.getElementById("contenido-oculto").style.display = "block";
+            const pre_content = document.getElementById("pre-content");
+            pre_content.classList.remove("hidden");
+            pre_content.classList.add("visible");
+            
+            const post_content = document.getElementById("post-content");
+            post_content.classList.remove("hidden");
+            post_content.classList.add("visible");
+
         }
     }
 
