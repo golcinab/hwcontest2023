@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const targetDate = new Date("2023-11-28T00:00:00"); // Set target time.
+    const targetDate = new Date("2023-10-28T00:00:00"); // Set target time.
 
     function showContent() {
         const currentDate = new Date();
