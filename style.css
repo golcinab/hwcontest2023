@@ -26,3 +26,39 @@ p {
     max-width: 600px;
     margin: 0 auto;
 }
+
+.parchment {
+    background-color: #FAF0DC;
+    border: 1px solid #A89968;
+    padding: 20px 30px;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.2em;
+    color: #5D4C42;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-image: url('https://www.transparenttextures.com/patterns/parchment.png'); /* parchment texture */
+    overflow-wrap: break-word;
+}
+
+.parchment::before, 
+.parchent::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 20px;
+    position: relative;
+    margin: 0 auto;
+    background: inherit;
+    border-radius: 50%/100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.parchment::before {
+    top: -20px;
+}
+
+.parchment::after {
+    bottom: -20px;
+}
