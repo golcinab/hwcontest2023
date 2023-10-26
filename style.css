@@ -39,10 +39,11 @@ p {
     margin: 20px auto;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    background-image: url('https://www.transparenttextures.com/patterns/old-map.png'); /* parchment texture */
+    background-image: './images/texture_old_paper.jpg'; /* old paper texture */
     overflow-wrap: break-word;
 }
 
+/*
 .parchment::before, 
 .parchent::after {
     content: "";
@@ -62,4 +63,35 @@ p {
 
 .parchment::after {
     bottom: -20px;
+}
+*/
+.credits {
+    background-color: rgba(250, 240, 220, 0.7); /* Un fondo semitransparente que se asemeja al color del pergamino */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.credits h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.credits ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.credits li {
+    margin: 10px 0;
+}
+
+.credits a {
+    color: #5D4C42; /* Un marrón oscuro para que combine con el tema */
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.credits a:hover {
+    color: #3B3226; /* Un marrón más oscuro para el efecto de hover */
 }
