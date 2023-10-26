@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const fechaObjetivo = new Date("2023-10-27T12:00:00"); // Cambia esto a la fecha y hora que desees.
+    const fechaObjetivo = new Date("2023-10-27T00:00:00"); // Cambia esto a la fecha y hora que desees.
 
     function mostrarContenido() {
         const ahora = new Date();
