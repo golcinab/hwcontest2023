@@ -70,6 +70,8 @@ a {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     background-image: url("./images/texture_old_paper.jpg"); /* old paper texture */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     overflow-wrap: break-word;
 }
 
@@ -95,33 +97,25 @@ a {
     bottom: -20px;
 }
 */
-.credits {
-    background-color: rgba(250, 240, 220, 0.7); /* Un fondo semitransparente que se asemeja al color del pergamino */
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 50px;
+
+.creditos {
+    position: fixed; /* Fija la posición de los créditos en la ventana del navegador */
+    bottom: 10px; /* Posiciona los créditos a 10px del borde inferior */
+    left: 0; /* Alinea los créditos a la izquierda */
+    width: 100%; /* Ocupa el ancho total de la ventana */
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 0.8em; /* Reduce el tamaño de la fuente */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente para mejorar la legibilidad */
+    color: #f4e542; /* Color del texto */
+    padding: 5px 0; /* Añade algo de relleno superior e inferior */
+    z-index: 1000; /* Asegura que los créditos estén por encima de otros elementos */
 }
 
-.credits h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
+.creditos a {
+    color: #f4e542; /* Color de enlace */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
 }
 
-.credits ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.credits li {
-    margin: 10px 0;
-}
-
-.credits a {
-    color: #5D4C42; /* Un marrón oscuro para que combine con el tema */
-    text-decoration: underline;
-    transition: color 0.3s;
-}
-
-.credits a:hover {
-    color: #3B3226; /* Un marrón más oscuro para el efecto de hover */
+.creditos a:hover {
+    text-decoration: underline; /* Añade subrayado al pasar el ratón sobre los enlaces */
 }
