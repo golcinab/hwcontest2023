@@ -6,6 +6,8 @@ body {
     text-align: center;
     margin: 0;
     padding: 5% 0;
+    min-height: 100%;
+    position: relative;
 }
 
 h1, h2, h3 {
