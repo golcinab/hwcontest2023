@@ -98,7 +98,7 @@ footer {
     padding: 20px 0;
     font-size: 0.9em; /* Tamaño de letra más pequeño que el contenido principal */
     color: #f4e542; /* Color de letra amarillo oscuro para contraste */
-    border-top: 3px solid #f4733a; /* Borde superior naranja */
+    border-top: 0px solid #f4733a; /* Borde superior naranja */
     height: 60px; /* Definimos un alto para el footer. Puedes ajustarlo según tus necesidades */
     position: absolute;
     bottom: 0;
