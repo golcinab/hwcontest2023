@@ -3,48 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concurso de Halloween 2023</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #2c2c2c;
-            color: #f4e542;
-            text-align: center;
-            padding: 5% 0;
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.2em;
-            margin: 20px 0;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #f4e542;
-            color: #2c2c2c;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        .btn:hover {
-            background-color: #d8c130;
-        }
-    </style>
+    <title>Novicap Halloween Contest 2023</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>¡Nueva pista!</h1>
-        <p>En el rincón más oscuro me hallarás, y cuando me enciendas, aterrarás.</p>
+    <div class="content-wrap">
+        <div id="header" class="visible">
+            <h1>Halloween Contest '23</h1>
+        </div>
+        <div id="pre-content" class="visible">
+            <p>¡¡No te intentes adelantar!! Por favor, espera solo un poco más...</p>
+            <div id="counter">
+                    <span id="days"></span> días,
+                    <span id="hours"></span> horas,
+                    <span id="minutes"></span> minutos y
+                    <span id="seconds"></span> segundos
+            </div>
+        </div>
+        <div id="post-content" class="hidden">
+            <h2>¡Bien hecho! Esta es la siguiente pista:</h2>
+            <br>
+            <div class="parchment">
+            <p>
+                En el rincón más oscuro me hallarás, <br>
+                y cuando me enciendas, aterrarás.
+            </p>
+            </div>
+        </div>
     </div>
+    <footer>
+        <h2>Créditos</h2>
+        <ul>
+            <li><a href="http://www.flickr.com/photos/lenabem-anna/15679826052/in/photostream/">Texture - old paper 9</a></li>
+        </ul>
+    </footer>
 
-    <!-- Aquí puedes agregar un formulario o cualquier otro contenido adicional -->
-
+    <script src="./script.js"></script>
 </body>
 </html>
