@@ -8,7 +8,7 @@ body {
     padding: 5% 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
     font-family: 'Chiller', cursive; 
     color: #f4733a; 
 }
@@ -49,7 +49,7 @@ p {
 .parchment {
     position: relative;
     background-color: #FAF0DC;
-    border: 1px solid #A89968;
+    border: 0px;
     padding: 20px 30px;
     font-family: 'Times New Roman', serif;
     font-size: 1.2em;
@@ -57,7 +57,7 @@ p {
     max-width: 500px;
     margin: 20px auto;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+    border-radius: 5px;
     background-image: url("./images/texture_old_paper.jpg"); /* old paper texture */
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -87,24 +87,41 @@ p {
 }
 */
 
-.creditos {
-    position: fixed; /* Fija la posición de los créditos en la ventana del navegador */
-    bottom: 10px; /* Posiciona los créditos a 10px del borde inferior */
-    left: 0; /* Alinea los créditos a la izquierda */
-    width: 100%; /* Ocupa el ancho total de la ventana */
-    text-align: center; /* Centra el texto horizontalmente */
-    font-size: 0.8em; /* Reduce el tamaño de la fuente */
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente para mejorar la legibilidad */
-    color: #f4e542; /* Color del texto */
-    padding: 5px 0; /* Añade algo de relleno superior e inferior */
-    z-index: 1000; /* Asegura que los créditos estén por encima de otros elementos */
+footer {
+    background-color: #2c2c2c; /* Fondo oscuro */
+    padding: 20px 0;
+    font-size: 0.9em; /* Tamaño de letra más pequeño que el contenido principal */
+    color: #f4e542; /* Color de letra amarillo oscuro para contraste */
+    border-top: 3px solid #f4733a; /* Borde superior naranja */
 }
 
-.creditos a {
-    color: #f4e542; /* Color de enlace */
+footer h2 {
+    font-size: 1.2em; /* Tamaño de letra para el título de créditos */
+    margin: 0 0 15px 0; /* Ajusta márgenes del título */
+    text-align: center; /* Centra el título */
+}
+
+footer ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centra los elementos de la lista */
+}
+
+footer li {
+    margin: 5px 0; /* Espaciado entre elementos de la lista */
+}
+
+.creditos-footer a {
+    color: #f4e542; /* Color de enlace amarillo oscuro */
     text-decoration: none; /* Elimina el subrayado de los enlaces */
+    transition: color 0.3s; /* Transición suave al cambiar color */
 }
 
-.creditos a:hover {
-    text-decoration: underline; /* Añade subrayado al pasar el ratón sobre los enlaces */
+footer a:hover {
+    color: #f4733a; /* Cambia a naranja al pasar el ratón sobre el enlace */
 }
+
+
+
+
