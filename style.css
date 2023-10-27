@@ -19,21 +19,10 @@ h1 {
     text-align: center;
 }
 
-p, li {
+p {
     font-size: 1.2em;
     margin: 20px 0;
     line-height: 1.5;
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 40px;
-}
-
-a {
-    color: #f4733a;
-    text-decoration: none;
-    transition: color 0.3s;
 }
 
 .container {
