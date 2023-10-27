@@ -25,5 +25,5 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("seconds").textContent = seconds;
     }
 
-    const show_delay = setInterval(showContent, 1000); // Updates every second.
+    const show_delay = setInterval(showContent, 500); // Updates every second.
 });
